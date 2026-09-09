@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bulk Delete Tools</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -125,6 +127,22 @@
     .g4,.g3{grid-template-columns:1fr 1fr}
     .plans,.g2{grid-template-columns:1fr}
     nav a:not(.nav-cta){display:none}
+  }
+  /* mobile fixes */
+  html,body{overflow-x:hidden;max-width:100%}
+  .hero>*,.prod>*,.grid>*,.fam>*,.mock,.mock-list,.mock-list div{min-width:0}
+  .mock{max-width:100%}
+  .mock-list div{flex-wrap:wrap;gap:4px 12px}
+  img,svg,pre{max-width:100%}
+  @media(max-width:640px){
+    nav a:not(.nav-cta){display:none}
+    nav a{margin-left:0}
+    .hero h1{font-size:clamp(32px,9.5vw,44px)}
+    .hero p.lede{font-size:17px}
+    .wrap{padding:0 18px}
+    .g4,.g3{grid-template-columns:1fr}
+    .prod .side{min-width:0}
+    .prod .side .price-tag{white-space:normal}
   }
   @media(prefers-reduced-motion:no-preference){
     .btn,.chip{transition:background .15s,color .15s,border-color .15s}
