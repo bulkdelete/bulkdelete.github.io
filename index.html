@@ -89,6 +89,9 @@
   .prod .badge{width:52px;height:52px;border-radius:12px;display:grid;place-items:center;font-size:26px;color:#fff}
   .prod.tiktok .badge{background:var(--accent)}
   .prod.spotify .badge{background:var(--spotify)}
+  .prod.youtube .badge{background:#f00}
+  .btn-youtube{background:#f00;color:#fff}
+  .btn-youtube:hover{background:#c00}
   .prod h3{font-size:20px;font-weight:800;margin-bottom:4px}
   .prod .kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
   .status{font-weight:600}
@@ -195,8 +198,8 @@
   <section id="products">
     <div class="sec-head">
       <span class="eyebrow">The products</span>
-      <h2>Two extensions, same safe flow.</h2>
-      <p>Each is a one-time $6.99 unlock with a free daily tier. Pick the one for the account you want to clean up.</p>
+      <h2>Three extensions, same safe flow.</h2>
+      <p>Each is a one-time $6.99 unlock with a free daily tier. Pick the one for the account you want to clean up. YouTube is next out the door.</p>
     </div>
 
     <div class="prod tiktok" id="tiktok">
@@ -225,6 +228,19 @@
       <div class="side">
         <a class="btn btn-spotify" href="https://microsoftedge.microsoft.com/addons/detail/ibfchjifbckpkckhkhnnaednflldpnie" target="_blank" rel="noopener">Get it for Edge</a>
         <a class="btn btn-ghost" aria-disabled="true" href="https://chromewebstore.google.com/detail/iapabcolefaeoefimmhlcpjbphmkfifo" title="Submitted to the Chrome Web Store, awaiting review">Chrome · coming soon</a>
+        <span class="price-tag">Free 20/day · <b>$6.99</b> once</span>
+      </div>
+    </div>
+    <div class="prod youtube" id="youtube">
+      <div class="badge">&#9654;</div>
+      <div>
+        <div class="kicker"><span>YouTube</span> · <span class="status review">● Coming soon · submitting to Chrome and Edge</span></div>
+        <h3>Bulk Delete for YouTube</h3>
+        <p>Clear Watch Later, Liked videos, watch history, or any playlist you own in one pass. Preview, confirm, then a verified recount after reload, so “done” means done.</p>
+        <p class="clears">Clears: ⏰ Watch Later · 👍 Liked videos · 🕓 Watch history · 📋 your playlists. Everything is reversible — save, like, or watch a video again to bring it back.</p>
+      </div>
+      <div class="side">
+        <a class="btn btn-youtube" aria-disabled="true" href="#youtube">Coming soon</a>
         <span class="price-tag">Free 20/day · <b>$6.99</b> once</span>
       </div>
     </div>
@@ -276,12 +292,12 @@
     <div class="sec-head">
       <span class="eyebrow">The family</span>
       <h2>One engine, more platforms coming.</h2>
-      <p>Bulk Delete Tools builds focused cleanup utilities on a shared, safety-first engine. TikTok and Spotify are live on Edge and submitted to Chrome; the next one is in progress.</p>
+      <p>Bulk Delete Tools builds focused cleanup utilities on a shared, safety-first engine. TikTok and Spotify are live on Edge and submitted to Chrome; YouTube is built and heading to both stores.</p>
     </div>
     <div class="fam">
       <span class="chip live"><b>● Live</b> · Bulk Delete for TikTok</span>
       <span class="chip livesp"><b>● Live</b> · Bulk Delete for Spotify</span>
-      <span class="chip">Soon · YouTube Watch Later</span>
+      <span class="chip">● Coming soon · Bulk Delete for YouTube</span>
     </div>
   </section>
 
