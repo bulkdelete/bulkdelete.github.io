@@ -5,6 +5,7 @@ import datetime, pathlib
 SITE = "https://bulkdeletetools.com"
 PAGES = [
     {
+        "firefox": "https://addons.mozilla.org/firefox/addon/bulk-delete-for-tiktok/",
         "file": "how-to-delete-all-tiktok-videos.html",
         "title": "How to delete all your TikTok videos at once (2026)",
         "desc": "TikTok has no bulk delete. Here is the fastest manual way and a free browser extension that deletes all your TikTok videos, reposts, likes and favorites in one pass.",
@@ -24,6 +25,7 @@ PAGES = [
         ],
     },
     {
+        "firefox": "https://addons.mozilla.org/firefox/addon/bulk-delete-for-youtube/",
         "file": "how-to-clear-youtube-watch-later.html",
         "title": "How to clear YouTube Watch Later, Liked videos and history at once (2026)",
         "desc": "YouTube only removes watched videos from Watch Later. Here is how to clear Watch Later, Liked videos, watch history and playlists in bulk with a free browser extension.",
@@ -44,6 +46,7 @@ PAGES = [
         ],
     },
     {
+        "firefox": "https://addons.mozilla.org/firefox/addon/bulk-delete-for-spotify/",
         "file": "how-to-unlike-all-spotify-songs.html",
         "title": "How to unlike all your Spotify Liked Songs at once (2026)",
         "desc": "Spotify has no bulk unlike. Here is the fastest manual way and a free browser extension that clears your Liked Songs in one pass, with a preview and confirmation.",
@@ -96,6 +99,7 @@ def render(p):
     if p["chrome"]:
         btns += f'<a class="btn btn-primary" href="{p["chrome"]}" target="_blank" rel="noopener">Get it for Chrome</a>\n      '
     btns += f'<a class="btn {"btn-ghost" if p["chrome"] else "btn-primary"}" href="{p["edge"]}" target="_blank" rel="noopener">Get it for Edge</a>'
+    btns += f'\n      <a class="btn btn-ghost" href="{p["firefox"]}" target="_blank" rel="noopener">Get it for Firefox</a>'
     if not p["chrome"]:
         btns += '\n      <span class="price">Chrome version pending Google\'s new-publisher limit; the Edge build installs in Chrome-based browsers.</span>'
     sections = "\n".join(f"    <h2>{h}</h2>\n    <p>{b}</p>" for h, b in p["sections"])
