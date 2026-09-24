@@ -141,6 +141,7 @@ def render(p):
 <footer class="wrap">
   Bulk Delete Tools is not affiliated with {p["eyebrow"]}. Questions or refunds: support@bulkdeletetools.com &middot; <a href="/#privacy">Privacy</a> &middot; <a href="/">Home</a>
 </footer>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "e9101da8fe044aa4b91e8f59dfdc0896"}}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
 """
