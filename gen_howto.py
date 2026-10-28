@@ -53,7 +53,7 @@ PAGES = [
         "eyebrow": "Spotify",
         "accent": "#1db954",
         "video": "H39BWe1Xj2k",
-        "chrome": "https://chromewebstore.google.com/detail/iapabcolefaeoefimmhlcpjbphmkfifo",
+        "chrome": None,   # unpublished on Chrome 2026-10-28 (2-item cap went to YouTube)
         "edge": "https://microsoftedge.microsoft.com/addons/detail/ibfchjifbckpkckhkhnnaednflldpnie",
         "product": "Bulk Delete for Spotify",
         "intro": "Spotify's Liked Songs list has no select-all and no clear button. If you inherited a shared account, changed taste, or just want a clean slate, here are the two ways to empty it.",
