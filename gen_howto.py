@@ -32,7 +32,7 @@ PAGES = [
         "eyebrow": "YouTube",
         "accent": "#e23b2e",
         "video": "KWyBcFUsYfw",
-        "chrome": None,
+        "chrome": "https://chromewebstore.google.com/detail/mgaffkndkephgekbmkecnbaagoiillga",
         "edge": "https://microsoftedge.microsoft.com/addons/detail/kdbgopmdkbcjadidalplbjemamkojdeo",
         "product": "Bulk Delete for YouTube",
         "intro": "YouTube gives you exactly one bulk option: Remove watched videos from Watch Later. Everything else, including Liked videos and any playlist you made, is one click per video, and Watch Later caps at 5,000.",
@@ -101,7 +101,7 @@ def render(p):
     btns += f'<a class="btn {"btn-ghost" if p["chrome"] else "btn-primary"}" href="{p["edge"]}" target="_blank" rel="noopener">Get it for Edge</a>'
     btns += f'\n      <a class="btn btn-ghost" href="{p["firefox"]}" target="_blank" rel="noopener">Get it for Firefox</a>'
     if not p["chrome"]:
-        btns += '\n      <span class="price">Chrome version pending Google\'s new-publisher limit; the Edge build installs in Chrome-based browsers.</span>'
+        btns += '\n      <span class="price">Not on the Chrome Web Store yet; get it for Edge or Firefox.</span>'
     sections = "\n".join(f"    <h2>{h}</h2>\n    <p>{b}</p>" for h, b in p["sections"])
     faq_json = ",".join(
         '{"@type":"Question","name":%s,"acceptedAnswer":{"@type":"Answer","text":%s}}' % (jsonstr(h), jsonstr(b))
